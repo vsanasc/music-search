@@ -14,9 +14,10 @@ end
 
 
 target 'MusicSearch' do
-  common_pods
+  pod 'SwiftLint'
 end
 
 target 'MusicSearchTests' do
   common_pods
+  test_pods
 end
