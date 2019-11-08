@@ -1,4 +1,7 @@
 PODS:
+  - Kingfisher (5.9.0):
+    - Kingfisher/Core (= 5.9.0)
+  - Kingfisher/Core (5.9.0)
   - Mockingjay (3.0.0-alpha.1):
     - Mockingjay/Core (= 3.0.0-alpha.1)
     - Mockingjay/XCTest (= 3.0.0-alpha.1)
@@ -25,6 +28,7 @@ PODS:
   - URITemplate (3.0.0)
 
 DEPENDENCIES:
+  - Kingfisher
   - Mockingjay (= 3.0.0-alpha.1)
   - PromiseKit (~> 6.8)
   - RxCocoa (~> 5)
@@ -33,6 +37,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Kingfisher
     - Mockingjay
     - PromiseKit
     - RxCocoa
@@ -42,6 +47,7 @@ SPEC REPOS:
     - URITemplate
 
 SPEC CHECKSUMS:
+  Kingfisher: ff98240aebb7302bdc4f1ecd701761030ce18b16
   Mockingjay: 0f7c5aa49c7f1b95621cee3c79b557141f5a225c
   PromiseKit: c06835ba442ce5454ce3cdde470232804a6e4ff8
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
@@ -50,6 +56,6 @@ SPEC CHECKSUMS:
   SwiftLint: fc9859e4e1752340664851f667bb1898b9c90114
   URITemplate: 58e0d47f967006c5d59888af5356c4a8ed3b197d
 
-PODFILE CHECKSUM: c6cf19f515ec001b7d6ebd5bd677044c9c36c1b1
+PODFILE CHECKSUM: 47895d2932df14e624d8832aa54bbdb4ebab5bf8
 
 COCOAPODS: 1.8.4

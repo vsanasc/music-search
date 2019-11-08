@@ -1,5 +1,5 @@
-# Uncomment the next line to define a global platform for your project
-platform :ios, '11.0'
+
+platform :ios, '11.4'
 use_frameworks!
 
 def common_pods
@@ -17,7 +17,24 @@ target 'MusicSearch' do
   pod 'SwiftLint'
 end
 
-target 'MusicSearchTests' do
+target 'MusicSearchIOS' do
+  pod 'Kingfisher'
   common_pods
-  test_pods
 end
+
+target 'MusicSearchKit' do
+  pod 'Mockingjay', '3.0.0-alpha.1'
+  common_pods
+end
+
+target 'MusicSearchIOSTests' do
+  test_pods
+  common_pods
+end
+
+target 'MusicSearchKitTests' do
+  test_pods
+  common_pods
+end
+
+
