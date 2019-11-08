@@ -1,0 +1,11 @@
+os: osx
+language: objective-c
+osx_image: xcode11.2
+install:
+  - bundle update
+  - bundle install
+  - bundle exec pod install
+script:
+  - bundle exec fastlane test
+rvm:
+  - 2.3.3
