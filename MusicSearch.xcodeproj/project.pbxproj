@@ -44,6 +44,10 @@
 		9884F7BA237647BB0041F314 /* DateFormatter+iso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884F7B6237647BB0041F314 /* DateFormatter+iso.swift */; };
 		9884F7BB237647BB0041F314 /* Bundle+json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884F7B7237647BB0041F314 /* Bundle+json.swift */; };
 		9884F7BC237647BB0041F314 /* String+removeslashes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884F7B8237647BB0041F314 /* String+removeslashes.swift */; };
+		9893C24523768D1900C952D6 /* SongListRemoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C24423768D1900C952D6 /* SongListRemoteTests.swift */; };
+		9893C24823768E4C00C952D6 /* SongListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C24723768E4C00C952D6 /* SongListAPI.swift */; };
+		9893C24A2376919A00C952D6 /* FakeManagerRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C2492376919A00C952D6 /* FakeManagerRequestAPI.swift */; };
+		9893C24C2376A4CA00C952D6 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C24B2376A4CA00C952D6 /* ErrorMessage.swift */; };
 		98AEE3B72376502600DDE6DD /* JSONDecoderDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEE3B62376502600DDE6DD /* JSONDecoderDateFormatter.swift */; };
 		98AEE3BD2376510600DDE6DD /* ReusableExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEE3BA2376510600DDE6DD /* ReusableExtensionTests.swift */; };
 		98AEE3BE2376510600DDE6DD /* array.json in Resources */ = {isa = PBXBuildFile; fileRef = 98AEE3BB2376510600DDE6DD /* array.json */; };
@@ -193,6 +197,10 @@
 		9884F7B6237647BB0041F314 /* DateFormatter+iso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+iso.swift"; sourceTree = "<group>"; };
 		9884F7B7237647BB0041F314 /* Bundle+json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+json.swift"; sourceTree = "<group>"; };
 		9884F7B8237647BB0041F314 /* String+removeslashes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+removeslashes.swift"; sourceTree = "<group>"; };
+		9893C24423768D1900C952D6 /* SongListRemoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListRemoteTests.swift; sourceTree = "<group>"; };
+		9893C24723768E4C00C952D6 /* SongListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListAPI.swift; sourceTree = "<group>"; };
+		9893C2492376919A00C952D6 /* FakeManagerRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeManagerRequestAPI.swift; sourceTree = "<group>"; };
+		9893C24B2376A4CA00C952D6 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		98AEE3B62376502600DDE6DD /* JSONDecoderDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderDateFormatter.swift; sourceTree = "<group>"; };
 		98AEE3BA2376510600DDE6DD /* ReusableExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableExtensionTests.swift; sourceTree = "<group>"; };
 		98AEE3BB2376510600DDE6DD /* array.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = array.json; sourceTree = "<group>"; };
@@ -297,6 +305,7 @@
 			isa = PBXGroup;
 			children = (
 				98AEE3C3237654EA00DDE6DD /* SongModelViewModel.swift */,
+				9893C24B2376A4CA00C952D6 /* ErrorMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -331,6 +340,7 @@
 			children = (
 				9835F60823765DD600FC7789 /* Network */,
 				9835F60B23765DD600FC7789 /* Remote */,
+				9893C2492376919A00C952D6 /* FakeManagerRequestAPI.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -347,6 +357,7 @@
 		9835F60B23765DD600FC7789 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
+				9893C24423768D1900C952D6 /* SongListRemoteTests.swift */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -394,6 +405,7 @@
 		9835F632237664EE00FC7789 /* SongList */ = {
 			isa = PBXGroup;
 			children = (
+				9893C24623768E3700C952D6 /* Implementation */,
 				9835F6332376650D00FC7789 /* SongListRemoteAPI.swift */,
 				9835F6352376652F00FC7789 /* SongListEndpoint.swift */,
 			);
@@ -417,9 +429,9 @@
 			isa = PBXGroup;
 			children = (
 				98AEE3C02376537500DDE6DD /* ViewModel */,
-				98AEE3B9237650FC00DDE6DD /* Reusable */,
 				9835F60723765DD600FC7789 /* Repository */,
 				9884F7B12376470D0041F314 /* Models */,
+				98AEE3B9237650FC00DDE6DD /* Reusable */,
 				9869AEF7237626B400BE08D9 /* Info.plist */,
 			);
 			path = MusicSearchKitTests;
@@ -494,6 +506,14 @@
 				9884F7B8237647BB0041F314 /* String+removeslashes.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9893C24623768E3700C952D6 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				9893C24723768E4C00C952D6 /* SongListAPI.swift */,
+			);
+			path = Implementation;
 			sourceTree = "<group>";
 		};
 		98AEE3B52376501300DDE6DD /* Utils */ = {
@@ -996,6 +1016,7 @@
 				9884F7BC237647BB0041F314 /* String+removeslashes.swift in Sources */,
 				9835F62323765F4300FC7789 /* URLSessionManagerRequestAPI.swift in Sources */,
 				98AEE3C4237654EA00DDE6DD /* SongModelViewModel.swift in Sources */,
+				9893C24C2376A4CA00C952D6 /* ErrorMessage.swift in Sources */,
 				9835F62523765F4300FC7789 /* NetworkResult.swift in Sources */,
 				9835F6362376652F00FC7789 /* SongListEndpoint.swift in Sources */,
 				9884F7BA237647BB0041F314 /* DateFormatter+iso.swift in Sources */,
@@ -1008,6 +1029,7 @@
 				9884F7AF2376323D0041F314 /* SongModel.swift in Sources */,
 				9835F62223765F4300FC7789 /* ManagerRequestAPI.swift in Sources */,
 				9835F6342376650D00FC7789 /* SongListRemoteAPI.swift in Sources */,
+				9893C24823768E4C00C952D6 /* SongListAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1018,6 +1040,8 @@
 				9835F60D23765DD600FC7789 /* ManagerRequestAPITests.swift in Sources */,
 				9835F6302376647600FC7789 /* NetworkHTTPTests.swift in Sources */,
 				9835F60223765B9600FC7789 /* SectionViewModelTests.swift in Sources */,
+				9893C24A2376919A00C952D6 /* FakeManagerRequestAPI.swift in Sources */,
+				9893C24523768D1900C952D6 /* SongListRemoteTests.swift in Sources */,
 				98AEE3BD2376510600DDE6DD /* ReusableExtensionTests.swift in Sources */,
 				98AEE3C22376539800DDE6DD /* ModelViewModelTests.swift in Sources */,
 				9869AEF6237626B400BE08D9 /* ModelTests.swift in Sources */,
