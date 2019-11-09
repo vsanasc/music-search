@@ -9,7 +9,7 @@ import XCTest
 import RxSwift
 @testable import MusicSearchKit
 
-class SectionViewModelTests: XCTestCase {
+class SongListViewModelTests: XCTestCase {
 
     private let disposeBag = DisposeBag()
 
@@ -19,7 +19,7 @@ class SectionViewModelTests: XCTestCase {
         StubService.stubSongList()
     }
 
-    func test_songListViewModel_loadSongs_success() {
+    func test_loadSongs_success() {
 
         let exp = expectation(description: "songListViewModel_loadSongs_success")
         let repository = FakeSongListRemoteAPI()
@@ -41,7 +41,7 @@ class SectionViewModelTests: XCTestCase {
         waitForExpectations(timeout: 3.0, handler: nil)
     }
 
-    func test_songListViewModel_loadSongs_fail() {
+    func test_loadSongs_fail() {
 
         let exp = expectation(description: "songListViewModel_loadSongs_fail")
         let repository = FakeSongListRemoteAPIError()
