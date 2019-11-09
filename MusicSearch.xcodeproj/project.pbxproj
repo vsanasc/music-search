@@ -11,7 +11,7 @@
 		98210D03237615B4009B31D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98210D02237615B4009B31D5 /* AppDelegate.swift */; };
 		98210D0C237615B5009B31D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98210D0B237615B5009B31D5 /* Assets.xcassets */; };
 		98210D0F237615B5009B31D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98210D0D237615B5009B31D5 /* LaunchScreen.storyboard */; };
-		9835F60223765B9600FC7789 /* SectionViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9835F60123765B9600FC7789 /* SectionViewModelTests.swift */; };
+		9835F60223765B9600FC7789 /* SongListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9835F60123765B9600FC7789 /* SongListViewModelTests.swift */; };
 		9835F60423765C3D00FC7789 /* SongListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9835F60323765C3D00FC7789 /* SongListViewModel.swift */; };
 		9835F60D23765DD600FC7789 /* ManagerRequestAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9835F60923765DD600FC7789 /* ManagerRequestAPITests.swift */; };
 		9835F61E23765F4300FC7789 /* StubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9835F61223765F4300FC7789 /* StubService.swift */; };
@@ -50,6 +50,8 @@
 		9893C24C2376A4CA00C952D6 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C24B2376A4CA00C952D6 /* ErrorMessage.swift */; };
 		9893C24F2376AFA100C952D6 /* FakeSongListRemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C24E2376AFA100C952D6 /* FakeSongListRemoteAPI.swift */; };
 		9893C2542376BB9D00C952D6 /* FakeSongListRemoteAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C2532376BB9D00C952D6 /* FakeSongListRemoteAPIError.swift */; };
+		9893C2572376C04400C952D6 /* RootViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C2562376C04400C952D6 /* RootViewModelTests.swift */; };
+		9893C2592376C0DB00C952D6 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C2582376C0DB00C952D6 /* RootViewModel.swift */; };
 		98AEE3B72376502600DDE6DD /* JSONDecoderDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEE3B62376502600DDE6DD /* JSONDecoderDateFormatter.swift */; };
 		98AEE3BD2376510600DDE6DD /* ReusableExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEE3BA2376510600DDE6DD /* ReusableExtensionTests.swift */; };
 		98AEE3BE2376510600DDE6DD /* array.json in Resources */ = {isa = PBXBuildFile; fileRef = 98AEE3BB2376510600DDE6DD /* array.json */; };
@@ -166,7 +168,7 @@
 		98210D0B237615B5009B31D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98210D0E237615B5009B31D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98210D10237615B5009B31D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9835F60123765B9600FC7789 /* SectionViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewModelTests.swift; sourceTree = "<group>"; };
+		9835F60123765B9600FC7789 /* SongListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewModelTests.swift; sourceTree = "<group>"; };
 		9835F60323765C3D00FC7789 /* SongListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewModel.swift; sourceTree = "<group>"; };
 		9835F60923765DD600FC7789 /* ManagerRequestAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagerRequestAPITests.swift; sourceTree = "<group>"; };
 		9835F61223765F4300FC7789 /* StubService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubService.swift; sourceTree = "<group>"; };
@@ -205,6 +207,8 @@
 		9893C24B2376A4CA00C952D6 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		9893C24E2376AFA100C952D6 /* FakeSongListRemoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSongListRemoteAPI.swift; sourceTree = "<group>"; };
 		9893C2532376BB9D00C952D6 /* FakeSongListRemoteAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeSongListRemoteAPIError.swift; sourceTree = "<group>"; };
+		9893C2562376C04400C952D6 /* RootViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModelTests.swift; sourceTree = "<group>"; };
+		9893C2582376C0DB00C952D6 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		98AEE3B62376502600DDE6DD /* JSONDecoderDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderDateFormatter.swift; sourceTree = "<group>"; };
 		98AEE3BA2376510600DDE6DD /* ReusableExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableExtensionTests.swift; sourceTree = "<group>"; };
 		98AEE3BB2376510600DDE6DD /* array.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = array.json; sourceTree = "<group>"; };
@@ -318,6 +322,7 @@
 			isa = PBXGroup;
 			children = (
 				9835F60323765C3D00FC7789 /* SongListViewModel.swift */,
+				9893C2582376C0DB00C952D6 /* RootViewModel.swift */,
 			);
 			path = Section;
 			sourceTree = "<group>";
@@ -530,6 +535,15 @@
 			path = Fake;
 			sourceTree = "<group>";
 		};
+		9893C2552376BFFB00C952D6 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				9835F60123765B9600FC7789 /* SongListViewModelTests.swift */,
+				9893C2562376C04400C952D6 /* RootViewModelTests.swift */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
 		98AEE3B52376501300DDE6DD /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -560,8 +574,8 @@
 		98AEE3C02376537500DDE6DD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				9893C2552376BFFB00C952D6 /* Section */,
 				98AEE3C12376539800DDE6DD /* ModelViewModelTests.swift */,
-				9835F60123765B9600FC7789 /* SectionViewModelTests.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -1030,6 +1044,7 @@
 				9884F7BC237647BB0041F314 /* String+removeslashes.swift in Sources */,
 				9835F62323765F4300FC7789 /* URLSessionManagerRequestAPI.swift in Sources */,
 				98AEE3C4237654EA00DDE6DD /* SongModelViewModel.swift in Sources */,
+				9893C2592376C0DB00C952D6 /* RootViewModel.swift in Sources */,
 				9893C24C2376A4CA00C952D6 /* ErrorMessage.swift in Sources */,
 				9835F62523765F4300FC7789 /* NetworkResult.swift in Sources */,
 				9835F6362376652F00FC7789 /* SongListEndpoint.swift in Sources */,
@@ -1054,10 +1069,11 @@
 				9893C2542376BB9D00C952D6 /* FakeSongListRemoteAPIError.swift in Sources */,
 				9835F60D23765DD600FC7789 /* ManagerRequestAPITests.swift in Sources */,
 				9835F6302376647600FC7789 /* NetworkHTTPTests.swift in Sources */,
-				9835F60223765B9600FC7789 /* SectionViewModelTests.swift in Sources */,
+				9835F60223765B9600FC7789 /* SongListViewModelTests.swift in Sources */,
 				9893C24A2376919A00C952D6 /* FakeManagerRequestAPI.swift in Sources */,
 				9893C24523768D1900C952D6 /* SongListRemoteTests.swift in Sources */,
 				98AEE3BD2376510600DDE6DD /* ReusableExtensionTests.swift in Sources */,
+				9893C2572376C04400C952D6 /* RootViewModelTests.swift in Sources */,
 				98AEE3C22376539800DDE6DD /* ModelViewModelTests.swift in Sources */,
 				9893C24F2376AFA100C952D6 /* FakeSongListRemoteAPI.swift in Sources */,
 				9869AEF6237626B400BE08D9 /* ModelTests.swift in Sources */,
