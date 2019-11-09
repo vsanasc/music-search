@@ -10,11 +10,11 @@ import MusicSearchKit
 
 extension UIViewController {
 
-    func present(_ errorMessage: ErrorMessage) {
+    func present(_ errorMessage: ErrorMessage, completion: (() -> Void)? = nil) {
         let alert = UIAlertController(title: errorMessage.title,
                                       message: errorMessage.message,
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
-        present(alert, animated: true)
+        present(alert, animated: true, completion: completion)
     }
 }
