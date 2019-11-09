@@ -5,7 +5,7 @@
 //  Created by Vitor S do Nascimento on 08-11-19.
 //
 
-struct SongModel: Decodable {
+public struct SongModel: Decodable {
     let wrapperType: String
     let kind: String
     let artistId: Int
