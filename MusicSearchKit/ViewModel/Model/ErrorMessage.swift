@@ -12,8 +12,8 @@ public struct ErrorMessage: Error {
         static let message = "Conection lost. Try again later!"
     }
     let id: UUID
-    let title: String
-    let message: String
+    public let title: String
+    public let message: String
 
     init(title: String? = nil, message: String? = nil) {
         self.id = UUID()
