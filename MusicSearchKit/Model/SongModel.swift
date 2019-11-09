@@ -6,12 +6,69 @@
 //
 
 struct SongModel: Decodable {
-    let name: String
-    init(name: String) {
-        self.name = name
-    }
+    let wrapperType: String
+    let kind: String
+    let artistId: Int
+    let collectionId: Int
+    let trackId: Int
+    let artistName: String
+    let collectionName: String
+    let trackName: String
+    let artistViewUrl: URL
+    let collectionViewUrl: URL
+    let trackViewUrl: URL
+    let previewUrl: URL
+    let artworkUrl30: URL
+    let artworkUrl60: URL
+    let artworkUrl100: URL
+    let collectionPrice: Double
+    let trackPrice: Double
+    let collectionHdPrice: Double
+    let trackHdPrice: Double
+    let releaseDate: Date
+    let discCount: Int
+    let discNumber: Int
+    let trackCount: Int
+    let trackNumber: Int
+    let trackTimeMillis: Int
+    let country: String
+    let currency: String
+    let primaryGenreName: String
+    let contentAdvisoryRating: String
+    let shortDescription: String
+    let longDescription: String
 
     enum CodingKeys: String, CodingKey {
-        case name
+        case wrapperType
+        case kind
+        case artistId
+        case collectionId
+        case trackId
+        case artistName
+        case collectionName
+        case trackName
+        case artistViewUrl
+        case collectionViewUrl
+        case trackViewUrl
+        case previewUrl
+        case artworkUrl30
+        case artworkUrl60
+        case artworkUrl100
+        case collectionPrice
+        case trackPrice
+        case collectionHdPrice
+        case trackHdPrice
+        case releaseDate
+        case discCount
+        case discNumber
+        case trackCount
+        case trackNumber
+        case trackTimeMillis
+        case country
+        case currency
+        case primaryGenreName
+        case contentAdvisoryRating
+        case shortDescription
+        case longDescription
     }
 }
