@@ -55,9 +55,11 @@ class ManagerRequestAPITests: XCTestCase {
                     switch result {
                     case .success(let response):
                         XCTFail("It's not validating the status code: \(response)")
+                        exp.fulfill()
                     case .error(let error):
                         guard let err = error as? NetworkError else {
                             XCTFail("Invalid Error")
+                            exp.fulfill()
                             return
                         }
                         XCTAssertEqual(err.rawValue, NetworkError.httpError.rawValue)
