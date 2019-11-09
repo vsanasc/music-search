@@ -7,11 +7,14 @@
 
 import UIKit
 
-public class BaseLabel: NiblessLabel {
+public class BaseLabel: UILabel {
 
     public init() {
         super.init(frame: .zero)
         self.numberOfLines = 0
+    }
 
+    required init?(coder: NSCoder) {
+        return nil
     }
 }

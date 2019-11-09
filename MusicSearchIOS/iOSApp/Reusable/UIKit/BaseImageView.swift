@@ -7,11 +7,15 @@
 
 import UIKit
 
-public class BaseImageView: NiblessImageView {
+public class BaseImageView: UIImageView {
 
     public init() {
         super.init(frame: .zero)
         contentMode = .scaleAspectFill
         clipsToBounds = true
+    }
+
+    public required init?(coder: NSCoder) {
+        return nil
     }
 }
