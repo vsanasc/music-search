@@ -13,6 +13,8 @@ public class MusicSearchAppDependencyContainer {
     // MARK: - Shared Dependencies
     let sharedManagerRequestAPI: ManagerRequestAPI
     let sharedImageCache: ImageCache
+
+    // MARK: - Initialize
     public init() {
         sharedManagerRequestAPI = URLSessionManagerRequestAPI()
         sharedImageCache = ImageCacheKingfisher()
