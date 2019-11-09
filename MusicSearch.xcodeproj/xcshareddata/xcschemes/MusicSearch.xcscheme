@@ -20,6 +20,34 @@
                ReferencedContainer = "container:MusicSearch.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9869AEED237626B400BE08D9"
+               BuildableName = "MusicSearchKitTests.xctest"
+               BlueprintName = "MusicSearchKitTests"
+               ReferencedContainer = "container:MusicSearch.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9869AF10237626C900BE08D9"
+               BuildableName = "MusicSearchIOSTests.xctest"
+               BlueprintName = "MusicSearchIOSTests"
+               ReferencedContainer = "container:MusicSearch.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -53,16 +81,6 @@
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "98210D14237615B6009B31D5"
-               BuildableName = "MusicSearchTests.xctest"
-               BlueprintName = "MusicSearchTests"
-               ReferencedContainer = "container:MusicSearch.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference

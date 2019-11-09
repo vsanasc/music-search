@@ -6,7 +6,27 @@
 //
 
 import Foundation
+import MusicSearchKit
 
 public class MusicSearchAppDependencyContainer {
-    public init() { }
+
+    // MARK: - Shared Dependencies
+    let sharedManagerRequestAPI: ManagerRequestAPI
+    let sharedImageCache: ImageCache
+
+    // MARK: - Initialize
+    public init() {
+        sharedManagerRequestAPI = URLSessionManagerRequestAPI()
+        sharedImageCache = ImageCacheKingfisher()
+    }
+
+    public func makeRootViewController() -> RootViewController {
+        return RootViewController(rootViewModelFactory: self)
+    }
+}
+
+extension MusicSearchAppDependencyContainer: RootViewModelFactory {
+    public func makeRootViewModelFactory() -> RootViewModel {
+        return RootViewModel()
+    }
 }
