@@ -5,6 +5,15 @@
 //  Created by Vitor S do Nascimento on 08-11-19.
 //
 
+public struct SongResponseModel: Decodable {
+    let resultCount: Int
+    let results: [SongModel]
+
+    enum CodingKeys: String, CodingKey {
+        case resultCount, results
+    }
+}
+
 public struct SongModel: Decodable {
     let wrapperType: String
     let kind: String
@@ -23,8 +32,6 @@ public struct SongModel: Decodable {
     let artworkUrl100: URL
     let collectionPrice: Double
     let trackPrice: Double
-    let collectionHdPrice: Double
-    let trackHdPrice: Double
     let releaseDate: Date
     let discCount: Int
     let discNumber: Int
@@ -34,9 +41,6 @@ public struct SongModel: Decodable {
     let country: String
     let currency: String
     let primaryGenreName: String
-    let contentAdvisoryRating: String
-    let shortDescription: String
-    let longDescription: String
 
     enum CodingKeys: String, CodingKey {
         case wrapperType
@@ -56,8 +60,6 @@ public struct SongModel: Decodable {
         case artworkUrl100
         case collectionPrice
         case trackPrice
-        case collectionHdPrice
-        case trackHdPrice
         case releaseDate
         case discCount
         case discNumber
@@ -67,8 +69,5 @@ public struct SongModel: Decodable {
         case country
         case currency
         case primaryGenreName
-        case contentAdvisoryRating
-        case shortDescription
-        case longDescription
     }
 }

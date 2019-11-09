@@ -17,11 +17,11 @@ class ModelViewModelTests: XCTestCase {
             wrapperType: "",
             kind: "",
             artistId: 0,
-            collectionId: 0,
+            collectionId: 100,
             trackId: 0,
             artistName: "",
             collectionName: "",
-            trackName: "",
+            trackName: "Track name",
             artistViewUrl: fakeURL,
             collectionViewUrl: fakeURL,
             trackViewUrl: fakeURL,
@@ -31,8 +31,6 @@ class ModelViewModelTests: XCTestCase {
             artworkUrl100: fakeURL,
             collectionPrice: 1.0,
             trackPrice: 1.0,
-            collectionHdPrice: 1.0,
-            trackHdPrice: 1.0,
             releaseDate: Date(),
             discCount: 1,
             discNumber: 1,
@@ -41,13 +39,10 @@ class ModelViewModelTests: XCTestCase {
             trackTimeMillis: 1,
             country: "",
             currency: "",
-            primaryGenreName: "",
-            contentAdvisoryRating: "",
-            shortDescription: "",
-            longDescription: ""
+            primaryGenreName: ""
         )
         let songModelViewModel = SongModelViewModel(songModel: songModel)
         XCTAssertEqual(songModel.artistName, songModelViewModel.artistName)
-        XCTAssertEqual(songModel.shortDescription, songModelViewModel.shortDescription)
+        XCTAssertEqual(songModel.trackName, songModelViewModel.trackName)
     }
 }

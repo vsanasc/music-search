@@ -15,8 +15,6 @@ public class SongModelViewModel {
     let releaseDate: Date
     let trackTimeMillis: Int
     let primaryGenreName: String
-    let shortDescription: String
-    let longDescription: String
     public init(songModel: SongModel) {
         self.artistName = songModel.artistName
         self.collectionName = songModel.collectionName
@@ -27,7 +25,5 @@ public class SongModelViewModel {
         self.releaseDate = songModel.releaseDate
         self.trackTimeMillis = songModel.trackTimeMillis
         self.primaryGenreName = songModel.primaryGenreName
-        self.shortDescription = songModel.shortDescription
-        self.longDescription = songModel.longDescription
     }
 }
