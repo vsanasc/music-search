@@ -1,9 +1,8 @@
 //
 //  NetworkRequestAPI.swift
-//  SBrainKit
+//  MusicSearchKit
 //
-//  Created by Vitor S do Nascimento on 03-11-19.
-//  Copyright © 2019 Second Brain Project. All rights reserved.
+//  Created by Vitor S do Nascimento on 08-11-19.
 //
 
 import Mockingjay

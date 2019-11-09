@@ -1,9 +1,8 @@
 //
 //  EndpointType.swift
-//  SBrainKit
+//  MusicSearchKit
 //
-//  Created by Vitor S do Nascimento on 04-11-19.
-//  Copyright © 2019 Second Brain Project. All rights reserved.
+//  Created by Vitor S do Nascimento on 08-11-19.
 //
 
 public typealias Parameters = [String: Any]
