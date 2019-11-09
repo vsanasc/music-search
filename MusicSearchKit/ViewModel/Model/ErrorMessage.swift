@@ -15,7 +15,7 @@ public struct ErrorMessage: Error {
     public let title: String
     public let message: String
 
-    init(title: String? = nil, message: String? = nil) {
+    public init(title: String? = nil, message: String? = nil) {
         self.id = UUID()
         self.title = title ?? Defaults.title
         self.message = message ?? Defaults.message
