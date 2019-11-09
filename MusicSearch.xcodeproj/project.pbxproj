@@ -55,17 +55,15 @@
 		9893C26E2376C2D900C952D6 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C25C2376C2D900C952D6 /* ImageCache.swift */; };
 		9893C26F2376C2D900C952D6 /* ImageCacheKingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C25E2376C2D900C952D6 /* ImageCacheKingfisher.swift */; };
 		9893C2702376C2D900C952D6 /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C2602376C2D900C952D6 /* BaseLabel.swift */; };
-		9893C2712376C2D900C952D6 /* NiblessCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C2622376C2D900C952D6 /* NiblessCollectionViewCell.swift */; };
-		9893C2722376C2D900C952D6 /* NiblessImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C2632376C2D900C952D6 /* NiblessImageView.swift */; };
-		9893C2732376C2D900C952D6 /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C2642376C2D900C952D6 /* NiblessView.swift */; };
-		9893C2742376C2D900C952D6 /* NiblessButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C2652376C2D900C952D6 /* NiblessButton.swift */; };
-		9893C2752376C2D900C952D6 /* NiblessLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C2662376C2D900C952D6 /* NiblessLabel.swift */; };
-		9893C2762376C2D900C952D6 /* NiblessNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C2672376C2D900C952D6 /* NiblessNavigationController.swift */; };
-		9893C2772376C2D900C952D6 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C2682376C2D900C952D6 /* NiblessViewController.swift */; };
 		9893C2782376C2D900C952D6 /* BaseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C2692376C2D900C952D6 /* BaseImageView.swift */; };
 		9893C2792376C2D900C952D6 /* UIViewController+child.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C26B2376C2D900C952D6 /* UIViewController+child.swift */; };
 		9893C27A2376C2D900C952D6 /* UIViewController+presentErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C26C2376C2D900C952D6 /* UIViewController+presentErrorMessage.swift */; };
 		9893C27B2376C2D900C952D6 /* UIView+addSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C26D2376C2D900C952D6 /* UIView+addSubviews.swift */; };
+		9893C27E2376C6EF00C952D6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C27D2376C6EF00C952D6 /* RootViewController.swift */; };
+		9893C2802376D8FC00C952D6 /* ReusableExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C27F2376D8FC00C952D6 /* ReusableExtensionsTests.swift */; };
+		9893C2822376D90900C952D6 /* ReusableUIKitBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C2812376D90900C952D6 /* ReusableUIKitBaseTests.swift */; };
+		9893C286237710EA00C952D6 /* RootViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C285237710EA00C952D6 /* RootViewTests.swift */; };
+		9893C2892377114800C952D6 /* FakeRootViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9893C2882377114800C952D6 /* FakeRootViewModelFactory.swift */; };
 		98AEE3B72376502600DDE6DD /* JSONDecoderDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEE3B62376502600DDE6DD /* JSONDecoderDateFormatter.swift */; };
 		98AEE3BD2376510600DDE6DD /* ReusableExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEE3BA2376510600DDE6DD /* ReusableExtensionTests.swift */; };
 		98AEE3BE2376510600DDE6DD /* array.json in Resources */ = {isa = PBXBuildFile; fileRef = 98AEE3BB2376510600DDE6DD /* array.json */; };
@@ -226,17 +224,15 @@
 		9893C25C2376C2D900C952D6 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		9893C25E2376C2D900C952D6 /* ImageCacheKingfisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCacheKingfisher.swift; sourceTree = "<group>"; };
 		9893C2602376C2D900C952D6 /* BaseLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
-		9893C2622376C2D900C952D6 /* NiblessCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessCollectionViewCell.swift; sourceTree = "<group>"; };
-		9893C2632376C2D900C952D6 /* NiblessImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessImageView.swift; sourceTree = "<group>"; };
-		9893C2642376C2D900C952D6 /* NiblessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
-		9893C2652376C2D900C952D6 /* NiblessButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessButton.swift; sourceTree = "<group>"; };
-		9893C2662376C2D900C952D6 /* NiblessLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessLabel.swift; sourceTree = "<group>"; };
-		9893C2672376C2D900C952D6 /* NiblessNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
-		9893C2682376C2D900C952D6 /* NiblessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
 		9893C2692376C2D900C952D6 /* BaseImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseImageView.swift; sourceTree = "<group>"; };
 		9893C26B2376C2D900C952D6 /* UIViewController+child.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+child.swift"; sourceTree = "<group>"; };
 		9893C26C2376C2D900C952D6 /* UIViewController+presentErrorMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+presentErrorMessage.swift"; sourceTree = "<group>"; };
 		9893C26D2376C2D900C952D6 /* UIView+addSubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+addSubviews.swift"; sourceTree = "<group>"; };
+		9893C27D2376C6EF00C952D6 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		9893C27F2376D8FC00C952D6 /* ReusableExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableExtensionsTests.swift; sourceTree = "<group>"; };
+		9893C2812376D90900C952D6 /* ReusableUIKitBaseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableUIKitBaseTests.swift; sourceTree = "<group>"; };
+		9893C285237710EA00C952D6 /* RootViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewTests.swift; sourceTree = "<group>"; };
+		9893C2882377114800C952D6 /* FakeRootViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeRootViewModelFactory.swift; sourceTree = "<group>"; };
 		98AEE3B62376502600DDE6DD /* JSONDecoderDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderDateFormatter.swift; sourceTree = "<group>"; };
 		98AEE3BA2376510600DDE6DD /* ReusableExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableExtensionTests.swift; sourceTree = "<group>"; };
 		98AEE3BB2376510600DDE6DD /* array.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = array.json; sourceTree = "<group>"; };
@@ -487,9 +483,11 @@
 		9869AF17237626C900BE08D9 /* MusicSearchIOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				9893C2872377112700C952D6 /* Fake */,
 				9893C27C2376C33500C952D6 /* Reusable */,
 				9869AF312376294300BE08D9 /* DependencyContainerTests.swift */,
 				9869AF1A237626C900BE08D9 /* Info.plist */,
+				9893C285237710EA00C952D6 /* RootViewTests.swift */,
 			);
 			path = MusicSearchIOSTests;
 			sourceTree = "<group>";
@@ -498,6 +496,7 @@
 			isa = PBXGroup;
 			children = (
 				9869AF2F237628C500BE08D9 /* MusicSearchAppDependencyContainer.swift */,
+				9893C27D2376C6EF00C952D6 /* RootViewController.swift */,
 				9893C25A2376C2D900C952D6 /* Reusable */,
 			);
 			path = iOSApp;
@@ -604,25 +603,10 @@
 		9893C25F2376C2D900C952D6 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				9893C2612376C2D900C952D6 /* Nibless */,
 				9893C2692376C2D900C952D6 /* BaseImageView.swift */,
 				9893C2602376C2D900C952D6 /* BaseLabel.swift */,
 			);
 			path = UIKit;
-			sourceTree = "<group>";
-		};
-		9893C2612376C2D900C952D6 /* Nibless */ = {
-			isa = PBXGroup;
-			children = (
-				9893C2622376C2D900C952D6 /* NiblessCollectionViewCell.swift */,
-				9893C2632376C2D900C952D6 /* NiblessImageView.swift */,
-				9893C2642376C2D900C952D6 /* NiblessView.swift */,
-				9893C2652376C2D900C952D6 /* NiblessButton.swift */,
-				9893C2662376C2D900C952D6 /* NiblessLabel.swift */,
-				9893C2672376C2D900C952D6 /* NiblessNavigationController.swift */,
-				9893C2682376C2D900C952D6 /* NiblessViewController.swift */,
-			);
-			path = Nibless;
 			sourceTree = "<group>";
 		};
 		9893C26A2376C2D900C952D6 /* Extensions */ = {
@@ -638,8 +622,18 @@
 		9893C27C2376C33500C952D6 /* Reusable */ = {
 			isa = PBXGroup;
 			children = (
+				9893C2812376D90900C952D6 /* ReusableUIKitBaseTests.swift */,
+				9893C27F2376D8FC00C952D6 /* ReusableExtensionsTests.swift */,
 			);
 			path = Reusable;
+			sourceTree = "<group>";
+		};
+		9893C2872377112700C952D6 /* Fake */ = {
+			isa = PBXGroup;
+			children = (
+				9893C2882377114800C952D6 /* FakeRootViewModelFactory.swift */,
+			);
+			path = Fake;
 			sourceTree = "<group>";
 		};
 		98AEE3B52376501300DDE6DD /* Utils */ = {
@@ -1185,15 +1179,9 @@
 				9893C27B2376C2D900C952D6 /* UIView+addSubviews.swift in Sources */,
 				9893C26E2376C2D900C952D6 /* ImageCache.swift in Sources */,
 				9893C2702376C2D900C952D6 /* BaseLabel.swift in Sources */,
-				9893C2752376C2D900C952D6 /* NiblessLabel.swift in Sources */,
-				9893C2742376C2D900C952D6 /* NiblessButton.swift in Sources */,
 				9893C26F2376C2D900C952D6 /* ImageCacheKingfisher.swift in Sources */,
-				9893C2722376C2D900C952D6 /* NiblessImageView.swift in Sources */,
-				9893C2762376C2D900C952D6 /* NiblessNavigationController.swift in Sources */,
+				9893C27E2376C6EF00C952D6 /* RootViewController.swift in Sources */,
 				9893C2782376C2D900C952D6 /* BaseImageView.swift in Sources */,
-				9893C2772376C2D900C952D6 /* NiblessViewController.swift in Sources */,
-				9893C2712376C2D900C952D6 /* NiblessCollectionViewCell.swift in Sources */,
-				9893C2732376C2D900C952D6 /* NiblessView.swift in Sources */,
 				9869AF30237628C500BE08D9 /* MusicSearchAppDependencyContainer.swift in Sources */,
 				9893C2792376C2D900C952D6 /* UIViewController+child.swift in Sources */,
 				9893C27A2376C2D900C952D6 /* UIViewController+presentErrorMessage.swift in Sources */,
@@ -1204,7 +1192,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9893C286237710EA00C952D6 /* RootViewTests.swift in Sources */,
+				9893C2802376D8FC00C952D6 /* ReusableExtensionsTests.swift in Sources */,
 				9869AF322376294300BE08D9 /* DependencyContainerTests.swift in Sources */,
+				9893C2822376D90900C952D6 /* ReusableUIKitBaseTests.swift in Sources */,
+				9893C2892377114800C952D6 /* FakeRootViewModelFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
