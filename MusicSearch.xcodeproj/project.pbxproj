@@ -28,6 +28,14 @@
 		9869AF30237628C500BE08D9 /* MusicSearchAppDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9869AF2F237628C500BE08D9 /* MusicSearchAppDependencyContainer.swift */; };
 		9869AF322376294300BE08D9 /* DependencyContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9869AF312376294300BE08D9 /* DependencyContainerTests.swift */; };
 		9884F7AF2376323D0041F314 /* SongModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884F7AE2376323D0041F314 /* SongModel.swift */; };
+		9884F7B3237647320041F314 /* song.json in Resources */ = {isa = PBXBuildFile; fileRef = 9884F7B2237647320041F314 /* song.json */; };
+		9884F7BA237647BB0041F314 /* DateFormatter+iso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884F7B6237647BB0041F314 /* DateFormatter+iso.swift */; };
+		9884F7BB237647BB0041F314 /* Bundle+json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884F7B7237647BB0041F314 /* Bundle+json.swift */; };
+		9884F7BC237647BB0041F314 /* String+removeslashes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9884F7B8237647BB0041F314 /* String+removeslashes.swift */; };
+		98AEE3B72376502600DDE6DD /* JSONDecoderDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEE3B62376502600DDE6DD /* JSONDecoderDateFormatter.swift */; };
+		98AEE3BD2376510600DDE6DD /* ReusableExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98AEE3BA2376510600DDE6DD /* ReusableExtensionTests.swift */; };
+		98AEE3BE2376510600DDE6DD /* array.json in Resources */ = {isa = PBXBuildFile; fileRef = 98AEE3BB2376510600DDE6DD /* array.json */; };
+		98AEE3BF2376510600DDE6DD /* object.json in Resources */ = {isa = PBXBuildFile; fileRef = 98AEE3BC2376510600DDE6DD /* object.json */; };
 		E763C4DA6CF92726BA201ED2 /* Pods_MusicSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C63BB477BB42617C7E03241 /* Pods_MusicSearch.framework */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +150,14 @@
 		9869AF2F237628C500BE08D9 /* MusicSearchAppDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSearchAppDependencyContainer.swift; sourceTree = "<group>"; };
 		9869AF312376294300BE08D9 /* DependencyContainerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainerTests.swift; sourceTree = "<group>"; };
 		9884F7AE2376323D0041F314 /* SongModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongModel.swift; sourceTree = "<group>"; };
+		9884F7B2237647320041F314 /* song.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = song.json; sourceTree = "<group>"; };
+		9884F7B6237647BB0041F314 /* DateFormatter+iso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+iso.swift"; sourceTree = "<group>"; };
+		9884F7B7237647BB0041F314 /* Bundle+json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+json.swift"; sourceTree = "<group>"; };
+		9884F7B8237647BB0041F314 /* String+removeslashes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+removeslashes.swift"; sourceTree = "<group>"; };
+		98AEE3B62376502600DDE6DD /* JSONDecoderDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecoderDateFormatter.swift; sourceTree = "<group>"; };
+		98AEE3BA2376510600DDE6DD /* ReusableExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableExtensionTests.swift; sourceTree = "<group>"; };
+		98AEE3BB2376510600DDE6DD /* array.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = array.json; sourceTree = "<group>"; };
+		98AEE3BC2376510600DDE6DD /* object.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = object.json; sourceTree = "<group>"; };
 		A590E2FD30145FF8B4AA5AEC /* Pods-MusicSearchKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicSearchKitTests.debug.xcconfig"; path = "Target Support Files/Pods-MusicSearchKitTests/Pods-MusicSearchKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B0D6A9D483BB22F2DBC0FBEC /* Pods_MusicSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F03CC7022227BA2AE34A790B /* Pods-MusicSearchIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicSearchIOSTests.release.xcconfig"; path = "Target Support Files/Pods-MusicSearchIOSTests/Pods-MusicSearchIOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -238,7 +254,9 @@
 		9869AEE7237626B400BE08D9 /* MusicSearchKit */ = {
 			isa = PBXGroup;
 			children = (
+				98AEE3B8237650D600DDE6DD /* ViewModel */,
 				9884F7AD2376322B0041F314 /* Model */,
+				9884F7B4237647BB0041F314 /* Reusable */,
 				9869AEE8237626B400BE08D9 /* MusicSearchKit.h */,
 				9869AEE9237626B400BE08D9 /* Info.plist */,
 			);
@@ -248,7 +266,8 @@
 		9869AEF4237626B400BE08D9 /* MusicSearchKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				9869AEF5237626B400BE08D9 /* ModelTests.swift */,
+				98AEE3B9237650FC00DDE6DD /* Reusable */,
+				9884F7B12376470D0041F314 /* Models */,
 				9869AEF7237626B400BE08D9 /* Info.plist */,
 			);
 			path = MusicSearchKitTests;
@@ -287,6 +306,67 @@
 				9884F7AE2376323D0041F314 /* SongModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9884F7B0237646F90041F314 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				9884F7B2237647320041F314 /* song.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		9884F7B12376470D0041F314 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9884F7B0237646F90041F314 /* JSON */,
+				9869AEF5237626B400BE08D9 /* ModelTests.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9884F7B4237647BB0041F314 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				98AEE3B52376501300DDE6DD /* Utils */,
+				9884F7B5237647BB0041F314 /* Extensions */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		9884F7B5237647BB0041F314 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9884F7B6237647BB0041F314 /* DateFormatter+iso.swift */,
+				9884F7B7237647BB0041F314 /* Bundle+json.swift */,
+				9884F7B8237647BB0041F314 /* String+removeslashes.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		98AEE3B52376501300DDE6DD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				98AEE3B62376502600DDE6DD /* JSONDecoderDateFormatter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		98AEE3B8237650D600DDE6DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		98AEE3B9237650FC00DDE6DD /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				98AEE3BB2376510600DDE6DD /* array.json */,
+				98AEE3BC2376510600DDE6DD /* object.json */,
+				98AEE3BA2376510600DDE6DD /* ReusableExtensionTests.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 		A2E9290A47C5EA105445B5F8 /* Pods */ = {
@@ -522,6 +602,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98AEE3BF2376510600DDE6DD /* object.json in Resources */,
+				9884F7B3237647320041F314 /* song.json in Resources */,
+				98AEE3BE2376510600DDE6DD /* array.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,6 +819,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9884F7BC237647BB0041F314 /* String+removeslashes.swift in Sources */,
+				9884F7BA237647BB0041F314 /* DateFormatter+iso.swift in Sources */,
+				98AEE3B72376502600DDE6DD /* JSONDecoderDateFormatter.swift in Sources */,
+				9884F7BB237647BB0041F314 /* Bundle+json.swift in Sources */,
 				9884F7AF2376323D0041F314 /* SongModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -744,6 +831,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98AEE3BD2376510600DDE6DD /* ReusableExtensionTests.swift in Sources */,
 				9869AEF6237626B400BE08D9 /* ModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
