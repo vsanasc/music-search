@@ -26,4 +26,11 @@ class ModelTests: XCTestCase {
         XCTAssertNotNil(sut)
         XCTAssertEqual(sut.artistName, "Californication")
     }
+
+    func test_errorMessage_initialize() {
+        let sut = ErrorMessage(title: "Title", message: "Message")
+        let sut2 = ErrorMessage()
+        XCTAssertNotNil(sut)
+        XCTAssertNotNil(sut2)
+    }
 }
