@@ -41,7 +41,8 @@ public class SongListViewModel {
                 }
                 self?.dataListSubject.onNext(elements)
             }
-            .catch { [weak self] _ in
+            .catch { [weak self] error in
+                print("\(error)")
                 let error = ErrorMessage()
                 self?.errorMessagesSubject.onNext(error)
             }
