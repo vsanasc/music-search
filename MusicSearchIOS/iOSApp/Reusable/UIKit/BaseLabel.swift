@@ -11,7 +11,7 @@ public class BaseLabel: UILabel {
 
     public init() {
         super.init(frame: .zero)
-        self.numberOfLines = 0
+        self.numberOfLines = 1
     }
 
     required init?(coder: NSCoder) {
