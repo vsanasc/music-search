@@ -6,15 +6,15 @@
 //
 
 public class SongModelViewModel {
-    let artistName: String
-    let collectionName: String
-    let trackName: String
-    let previewUrl: URL
-    let artworkUrl100: URL
-    let trackPrice: Double
-    let releaseDate: Date
-    let trackTimeMillis: Int
-    let primaryGenreName: String
+    public let artistName: String?
+    public let collectionName: String?
+    public let trackName: String?
+    public let previewUrl: URL?
+    public let artworkUrl100: URL?
+    public let trackPrice: Double?
+    public let releaseDate: Date?
+    public let trackTimeMillis: Int?
+    public let primaryGenreName: String?
     public init(songModel: SongModel) {
         self.artistName = songModel.artistName
         self.collectionName = songModel.collectionName
