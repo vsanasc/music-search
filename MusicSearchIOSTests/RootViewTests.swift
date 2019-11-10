@@ -11,7 +11,10 @@ import XCTest
 class RootViewTests: XCTestCase {
 
     func test_rootViewController_initialize() {
-        let sut = RootViewController(rootViewModelFactory: FakeRootViewModelFactory())
+        let sut = RootViewController(
+            rootViewModelFactory: FakeRootViewModelFactory(),
+            appDependency: MusicSearchAppDependencyContainer()
+        )
         XCTAssertNotNil(sut)
         XCTAssertNil(RootViewController(coder: NSCoder()))
     }
