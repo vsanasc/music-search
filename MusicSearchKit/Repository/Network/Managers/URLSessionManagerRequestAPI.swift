@@ -22,7 +22,9 @@ public class URLSessionManagerRequestAPI: ManagerRequestAPI {
 
         var request = URLRequest(url: path)
         request.httpMethod = method.rawValue
-        request.httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: [])
+        if method != .get {
+            request.httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: [])
+        }
 
         // Build Auth Header
         for key in headers.keys {
