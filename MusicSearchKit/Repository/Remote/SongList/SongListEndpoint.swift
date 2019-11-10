@@ -10,7 +10,11 @@ public enum SongListEndpoint: Endpoint {
     public var path: String {
         switch self {
         case .search(let term, let limit):
-            return "/search?term=\(term)&mediaType=music&limit\(limit)"
+            var termString = "*"
+            if term != "" {
+                termString = term.encodeUrl
+            }
+            return "/search?term=\(termString)&mediaType=music&limit=\(limit)"
         }
     }
 
