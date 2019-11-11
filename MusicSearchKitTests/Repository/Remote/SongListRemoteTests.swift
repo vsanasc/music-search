@@ -12,25 +12,38 @@ import Mockingjay
 class SongListRemoteTests: XCTestCase {
     var songListRemote: SongListRemoteAPI?
 
-    let search = "something"
     override func setUp() {
         super.setUp()
         songListRemote = SongListAPI(manager: FakeManagerRequestAPI())
-        StubService.stubSongList()
     }
 
     func test_songListAPI_search() {
+        StubService.stubSongList()
 
         let exp = expectation(description: "songListAPI")
         songListRemote?
-            .getSongs(search: search)
+            .getSongs(search: "")
             .done { items in
-                XCTAssertEqual(items.count, 20)
-                XCTAssertEqual(items.first?.artistId, 269570329)
+                XCTAssertEqual(items.count, 200)
+                XCTAssertEqual(items.first?.artistId, 312095)
                 exp.fulfill()
             }
             .catch { error in
                 XCTFail("\(error)")
+                exp.fulfill()
+            }
+        waitForExpectations(timeout: 3, handler: nil)
+    }
+    func test_songListAPI_fail() {
+        let exp = expectation(description: "songListAPI_fail")
+        songListRemote?
+            .getSongs(search: "fail")
+            .done { _ in
+                XCTFail("Must be failed")
+                exp.fulfill()
+            }
+            .catch { error in
+                print(error)
                 exp.fulfill()
             }
         waitForExpectations(timeout: 3, handler: nil)

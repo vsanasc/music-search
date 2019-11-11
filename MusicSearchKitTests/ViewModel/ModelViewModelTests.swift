@@ -14,8 +14,6 @@ class ModelViewModelTests: XCTestCase {
 
     func test_songModelViewModel_initialize() {
         let songModel = SongModel(
-            wrapperType: "",
-            kind: "",
             artistId: 0,
             collectionId: 100,
             trackId: 0,

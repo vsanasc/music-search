@@ -14,7 +14,7 @@ public enum SongListEndpoint: Endpoint {
             if term != "" {
                 termString = term.encodeUrl
             }
-            return "/search?term=\(termString)&mediaType=music&limit=\(limit)"
+            return "/search?term=\(termString)&media=music&limit=\(limit)"
         }
     }
 

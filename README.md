@@ -27,14 +27,14 @@ pod 'Mockingjay', '3.0.0-alpha.1'
 
 ## Trello
 
-> How this is only a demo app, I don't use agile methodology, but in the same way, I use a Trello board. You can see this one in the following link: 
+How this is only a demo app, I don't use agile methodology, but in the same way, I use a Trello board. You can see this one in the following link: 
 
 
 https://trello.com/b/tq8X8DRC/music-search
 
 ## Architecture
 
-> This app has three targets for app and two for tests:
+This app has three targets for app and two for tests:
 
 - MusicSearch
 - MusicSearchIOS

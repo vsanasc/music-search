@@ -16,7 +16,7 @@ public class SongListAPI: SongListRemoteAPI {
     }
 
     public func getSongs(search: String) -> Promise<[SongModel]> {
-        let endpoint: SongListEndpoint = .search(term: search, limit: 20)
+        let endpoint: SongListEndpoint = .search(term: search, limit: 200)
         return Promise<[SongModel]> { seal in
             manager.request(endpoint.fullpath, method: .get, parameters: [:], headers: [:]) { (data, result) in
                 switch result {
