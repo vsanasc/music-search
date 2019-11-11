@@ -7,7 +7,8 @@
 ## Features
 
 - [x] List songs from API Server
-- [ ] Show detail each song
+- [x] Search songs
+- [ ] Show Album
 
 
 ## Requirements
