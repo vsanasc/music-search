@@ -8,11 +8,15 @@
 import UIKit
 import MusicSearchKit
 
-public class RootViewController: UIViewController {
+public class RootViewController: UINavigationController {
     private let rootViewModel: RootViewModel
-
-    public init(rootViewModelFactory: RootViewModelFactory) {
+    private let sectionDependencyContainer: SectionDependencyContainer
+    public init(
+        rootViewModelFactory: RootViewModelFactory,
+        appDependency: MusicSearchAppDependencyContainer
+    ) {
         self.rootViewModel = rootViewModelFactory.makeRootViewModelFactory()
+        self.sectionDependencyContainer = SectionDependencyContainer(appDependency: appDependency)
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -22,6 +26,8 @@ public class RootViewController: UIViewController {
 
     public override func viewDidLoad() {
         super.viewDidLoad()
+        let songList = sectionDependencyContainer.makeSongListViewController()
+        pushViewController(songList, animated: false)
     }
 }
 

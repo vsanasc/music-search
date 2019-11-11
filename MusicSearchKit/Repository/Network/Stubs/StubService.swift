@@ -10,10 +10,11 @@ import UIKit
 
 public class StubService {
 
+    private init() { }
     static func stubSongList() {
 
         let bundle = Bundle(for: StubService.self)
-        let endpoints: [SongListEndpoint] = [.search(term: "something", limit: 20)]
+        let endpoints: [SongListEndpoint] = [.search(term: "", limit: 20)]
         let image = UIImage(named: "artwork-demo.png", in: bundle, compatibleWith: nil)
         func builder(request: URLRequest) -> Response {
             let imageData: Data = (image?.pngData())!

@@ -21,7 +21,7 @@ public class MusicSearchAppDependencyContainer {
     }
 
     public func makeRootViewController() -> RootViewController {
-        return RootViewController(rootViewModelFactory: self)
+        return RootViewController(rootViewModelFactory: self, appDependency: self)
     }
 }
 

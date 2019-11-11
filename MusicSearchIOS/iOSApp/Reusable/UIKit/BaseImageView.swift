@@ -13,6 +13,7 @@ public class BaseImageView: UIImageView {
         super.init(frame: .zero)
         contentMode = .scaleAspectFill
         clipsToBounds = true
+        layer.cornerRadius = 10
     }
 
     public required init?(coder: NSCoder) {

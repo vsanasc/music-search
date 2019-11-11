@@ -15,20 +15,18 @@ public struct SongResponseModel: Decodable {
 }
 
 public struct SongModel: Decodable {
-    let wrapperType: String
-    let kind: String
     let artistId: Int
     let collectionId: Int
     let trackId: Int
     let artistName: String
     let collectionName: String
     let trackName: String
-    let artistViewUrl: URL
+    let artistViewUrl: URL?
     let collectionViewUrl: URL
     let trackViewUrl: URL
     let previewUrl: URL
-    let artworkUrl30: URL
-    let artworkUrl60: URL
+    let artworkUrl30: URL?
+    let artworkUrl60: URL?
     let artworkUrl100: URL
     let collectionPrice: Double
     let trackPrice: Double
@@ -43,8 +41,6 @@ public struct SongModel: Decodable {
     let primaryGenreName: String
 
     enum CodingKeys: String, CodingKey {
-        case wrapperType
-        case kind
         case artistId
         case collectionId
         case trackId

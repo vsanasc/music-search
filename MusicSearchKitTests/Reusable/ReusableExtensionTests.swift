@@ -43,4 +43,11 @@ class ReusableExtensionTests: XCTestCase {
         XCTAssertEqual(inputString.removeslashes, outputString)
     }
 
+    func test_string_encodeurl() {
+        let inputString = "testing url encoding"
+        let outputString = "testing%20url%20encoding"
+
+        XCTAssertEqual(inputString.encodeUrl, outputString)
+    }
+
 }

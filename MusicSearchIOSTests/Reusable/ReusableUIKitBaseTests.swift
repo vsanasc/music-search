@@ -12,7 +12,7 @@ class ReusableUIKitBaseTests: XCTestCase {
 
     func test_label_base() {
         let label = BaseLabel()
-        XCTAssertEqual(label.numberOfLines, 0)
+        XCTAssertEqual(label.numberOfLines, 1)
         XCTAssertNil(BaseLabel(coder: NSCoder()))
     }
 

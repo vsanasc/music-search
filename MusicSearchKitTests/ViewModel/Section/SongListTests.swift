@@ -9,7 +9,7 @@ import XCTest
 import RxSwift
 @testable import MusicSearchKit
 
-class SongListViewModelTests: XCTestCase {
+class SongListTests: XCTestCase {
 
     private let disposeBag = DisposeBag()
 
@@ -18,14 +18,13 @@ class SongListViewModelTests: XCTestCase {
 
         StubService.stubSongList()
     }
-
     func test_loadSongs_success() {
 
         let exp = expectation(description: "songListViewModel_loadSongs_success")
         let repository = FakeSongListRemoteAPI()
 
         let sut = SongListViewModel(repository: repository)
-        sut.loadSongs(search: "something")
+        sut.loadSongs(search: "")
         sut
             .dataList
             .subscribe(

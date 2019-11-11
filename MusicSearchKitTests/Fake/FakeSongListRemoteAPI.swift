@@ -14,8 +14,6 @@ class FakeSongListRemoteAPI: SongListRemoteAPI {
     func getSongs(search: String) -> Promise<[SongModel]> {
         let fakeURL = URL(string: "https://itunes.apple.com/")!
         let songModel = SongModel(
-            wrapperType: "",
-            kind: "",
             artistId: 0,
             collectionId: 100,
             trackId: 0,
