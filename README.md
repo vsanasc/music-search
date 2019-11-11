@@ -6,19 +6,20 @@
 
 ## Features
 
-- [] List songs from API Server
-- [] Show detail each song
+- [x] List songs from API Server
+- [ ] Show detail each song
 
 
 ## Requirements
 
 - iOS 11.0+
 - CocoaPods
+- Fastlane
 
 #### Libraries
 
 ```ruby
-pod 'SwiftLit'
+pod 'SwiftLint'
 pod "PromiseKit", "~> 6.8"
 pod 'RxSwift', '~> 5'
 pod 'RxCocoa', '~> 5'
