@@ -11,22 +11,6 @@ import UIKit
 public class StubService {
 
     private init() { }
-    /*
-    static func stubSongListFail() {
-
-        func builder404(request: URLRequest) -> Response {
-            let response = HTTPURLResponse(url: request.url!, statusCode: 404, httpVersion: nil, headerFields: nil)!
-            return .success(response, .noContent)
-
-        }
-        let endpoint = SongListEndpoint.search(term: "fail", limit: 20)
-        MockingjayProtocol.addStub(
-            matcher: http(endpoint.method.mockingjayMethod, uri: endpoint.fullpath),
-            delay: 1,
-            builder: builder404
-        )
-    }
-    */
     static func stubSongList() {
 
         let bundle = Bundle(for: StubService.self)
