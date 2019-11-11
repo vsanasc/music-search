@@ -12,6 +12,7 @@ extension UIView {
         guard let parent = self.superview else {
             return
         }
+        translatesAutoresizingMaskIntoConstraints = false
         let constraints: [NSLayoutConstraint] = [
             topAnchor.constraint(equalTo: parent.topAnchor),
             leadingAnchor.constraint(equalTo: parent.leadingAnchor),
