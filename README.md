@@ -16,12 +16,6 @@
 - CocoaPods
 - Fastlane
 
-## Screenshots
-
-![](/screenshots/1.png)
-![](/Screenshots/2.png)
-![](/Screenshots/3.png)
-
 #### Libraries
 
 ```ruby
@@ -31,6 +25,12 @@ pod 'RxSwift', '~> 5'
 pod 'RxCocoa', '~> 5'
 pod 'Mockingjay', '3.0.0-alpha.1'
 ```
+
+## Screenshots
+
+![](/screenshots/1.png)
+![](/Screenshots/2.png)
+![](/Screenshots/3.png)
 
 ## Trello
 
