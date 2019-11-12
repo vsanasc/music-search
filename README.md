@@ -29,7 +29,7 @@ pod 'Mockingjay', '3.0.0-alpha.1'
 
 ## Screenshots
 
-![](/screenshots/1.png)
+![](/Screenshots/1.png)
 ![](/Screenshots/2.png)
 ![](/Screenshots/3.png)
 
