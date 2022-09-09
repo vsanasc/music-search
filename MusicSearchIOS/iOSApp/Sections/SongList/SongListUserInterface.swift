@@ -11,7 +11,7 @@ import AVFoundation
 import AVKit
 import SafariServices
 
-protocol SongListTapOptionsDelegate: class {
+protocol SongListTapOptionsDelegate: AnyObject {
     func tapped(_ indexPath: IndexPath)
 }
 
@@ -57,11 +57,6 @@ class SongListUserInterface {
         }
 
     }
-    /*
-    func goAlbumAction(item: SongModelViewModel) -> ((UIAlertAction) -> Void)? {
-        return { _ in }
-    }
-    */
     private func playVideoAction(_ item: SongModelViewModel) -> ((UIAlertAction) -> Void)? {
         return { _ in
 

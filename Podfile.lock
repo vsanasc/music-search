@@ -1,7 +1,5 @@
 PODS:
-  - Kingfisher (5.9.0):
-    - Kingfisher/Core (= 5.9.0)
-  - Kingfisher/Core (5.9.0)
+  - Kingfisher (7.3.0)
   - Mockingjay (3.0.0-alpha.1):
     - Mockingjay/Core (= 3.0.0-alpha.1)
     - Mockingjay/XCTest (= 3.0.0-alpha.1)
@@ -9,36 +7,35 @@ PODS:
     - URITemplate (~> 3.0)
   - Mockingjay/XCTest (3.0.0-alpha.1):
     - Mockingjay/Core
-  - PromiseKit (6.12.0):
-    - PromiseKit/CorePromise (= 6.12.0)
-    - PromiseKit/Foundation (= 6.12.0)
-    - PromiseKit/UIKit (= 6.12.0)
-  - PromiseKit/CorePromise (6.12.0)
-  - PromiseKit/Foundation (6.12.0):
+  - PromiseKit (6.17.1):
+    - PromiseKit/CorePromise (= 6.17.1)
+    - PromiseKit/Foundation (= 6.17.1)
+    - PromiseKit/UIKit (= 6.17.1)
+  - PromiseKit/CorePromise (6.17.1)
+  - PromiseKit/Foundation (6.17.1):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.12.0):
+  - PromiseKit/UIKit (6.17.1):
     - PromiseKit/CorePromise
-  - RxCocoa (5.0.1):
-    - RxRelay (~> 5)
-    - RxSwift (~> 5)
-  - RxRelay (5.0.1):
-    - RxSwift (~> 5)
-  - RxSwift (5.0.1)
-  - SwiftLint (0.36.0)
-  - URITemplate (3.0.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SwiftLint (0.47.1)
+  - URITemplate (3.0.1)
 
 DEPENDENCIES:
   - Kingfisher
-  - Mockingjay (= 3.0.0-alpha.1)
-  - PromiseKit (~> 6.8)
-  - RxCocoa (~> 5)
-  - RxSwift (~> 5)
+  - Mockingjay (from `https://github.com/kylef/Mockingjay.git`)
+  - PromiseKit
+  - RxCocoa
+  - RxSwift
   - SwiftLint
 
 SPEC REPOS:
   trunk:
     - Kingfisher
-    - Mockingjay
     - PromiseKit
     - RxCocoa
     - RxRelay
@@ -46,16 +43,25 @@ SPEC REPOS:
     - SwiftLint
     - URITemplate
 
+EXTERNAL SOURCES:
+  Mockingjay:
+    :git: https://github.com/kylef/Mockingjay.git
+
+CHECKOUT OPTIONS:
+  Mockingjay:
+    :commit: b88c9dce2b7561cccbf35e2882b3c71a2efa387a
+    :git: https://github.com/kylef/Mockingjay.git
+
 SPEC CHECKSUMS:
-  Kingfisher: ff98240aebb7302bdc4f1ecd701761030ce18b16
-  Mockingjay: 0f7c5aa49c7f1b95621cee3c79b557141f5a225c
-  PromiseKit: c06835ba442ce5454ce3cdde470232804a6e4ff8
-  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
-  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
-  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
-  SwiftLint: fc9859e4e1752340664851f667bb1898b9c90114
-  URITemplate: 58e0d47f967006c5d59888af5356c4a8ed3b197d
+  Kingfisher: cdb1189a9223b1bc028816bd47c8b8101a58831c
+  Mockingjay: 97656c6f59879923976a0a52ef09da45756cca82
+  PromiseKit: ee485df3d4dc570594d7e7aecae6352697dc6a4c
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
+  URITemplate: 5f5a79f3e384884102c4e6b3325d159c20a8035a
 
-PODFILE CHECKSUM: 47895d2932df14e624d8832aa54bbdb4ebab5bf8
+PODFILE CHECKSUM: f93c1b08d3634323cd2ce764baa20eecea152319
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.11.3

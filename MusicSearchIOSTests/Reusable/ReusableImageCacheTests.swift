@@ -22,7 +22,6 @@ class ReusableImageCacheTests: XCTestCase {
         super.setUp()
         items = [ImageCacheKingfisher()]
 
-        //image = UIImage(named: "test.png", in: Bundle(for: type(of: self)), with: nil)
         image = UIImage(contentsOfFile: bundle.path(forResource: "test", ofType: "png")!)
         stub(uri(imageURL), builder200)
         stub(uri(imageFailURL), builder404)
